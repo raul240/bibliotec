@@ -6,7 +6,7 @@ export const db = await mysql.createConnection({
     password: "raulbrantes",
     database: "dblivraria", 
     authPlugins: {
-        mysql_gssapi_client:() => () => "",
+        auth_gssapi_client:() => () => "",
         mysql_native_password: () => () => "root"
     }
 
